@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    background-color: rgb(192, 245, 190);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+}
+section{
+    margin-left: 460px;
+    background-color: chartreuse;
+    width:400px;
+    height: auto;
+    padding: 10px;
+    box-shadow: 3px 3px 16px black;
+}
+abbr {
+   text-decoration: none;
+    color: darkblue;
+    cursor: pointer;
+  }
