@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="dados.css">
+</head>
+<body>
+    <header>
+        <h1>Digite os dados da pessoa</h1>
+    </header>
+    <main>
+        <div>
+            <p>Nome:<input type="text" name="nome" id="nome" placeholder="Nome Completo"></p>
+            <p>Nascimento:<input type="date" name="nas" id="date"></p>
+            <p>Altura:<input type="number" name="altura" id="altura" placeholder="Altura em Metros"></p>
+            <p>
+                peso:<input type="number"  name="peso" id="peso" placeholder="Peso em KG">
+                <input type="button" value="+" id="btn" onclick="add()">
+            </p>
+        </div>
+        <div id="res">
+            <table id="dados"></table>
+        </div>
+    </main>
+    <footer>
+        &copy;WS
+    </footer>
+    <script src="dados.js"></script>
+</body>
+</html>

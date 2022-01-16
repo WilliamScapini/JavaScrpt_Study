@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+         <p>Repellendus quis explicabo sunt impedit animi nulla vero </p>
+         <p>ex optio fugit similique fugiat nisi quia perspiciatis recusandae</p>
+         <p>quaerat repellat, consequatur at iure!</p>
+    </div>
+    <script>
+        const div = document.getElementById("container")
+        const p = document.querySelectorAll("p")
+
+        for(let i in p){
+            p[i].style = 'background-color: rgb(07, 76, 92); text-align: center; width: 500px; margin: 20px auto; font-size: 18pt; color: white;'
+        }
+    </script>
+</body>
+</html>
