@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Calculo <abbr title="Indíce de Massa Corporal">I.M.C.</abbr></h1>
+    <section>
+        <p>Digite os dados</p>
+        <div>
+        peso : <input type="number" name="txtn" id="txtn" placeholder="peso em kg"><br>
+        altura: <input type="number" name="txtn1" id="txtn1" placeholder="altura em cm"><br>
+        <input type="button" value="calcular" onclick="calcular()"><input type="button" value="limpar" onclick="reset()">
+        </div>
+        <div id="res"></div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

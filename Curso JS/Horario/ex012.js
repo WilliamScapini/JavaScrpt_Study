@@ -1,0 +1,6 @@
+var hr = new Date()
+var hora = hr.getHours()
+var mn = new Date()
+var minutos = mn.getMinutes()
+console.log(`são ${hora} horas`)
+console.log(`são ${minutos} minutos`)

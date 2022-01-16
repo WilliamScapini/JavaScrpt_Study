@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right,black,rgb(255, 252, 252));
+            font: normal 18pt cursive;
+            text-align: center;
+        }
+        section{
+            background-color: rgba(80, 250, 1, 0.658);
+            padding-top: 0.5px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            width:fit-content;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checador de Números</h1>
+    <section>
+        <div>
+            <h1>Digite um número</h1>
+            <input type="number" name="txt1" id="txt1" >
+            <input type="button" value="verificar" onclick="verify()" >
+        </div>
+        <div id="res">
+        
+        </div>
+    </section>
+    <script>
+        let n1 = document.getElementById("txt1")
+        let res = document.querySelector('#res')
+        function verify(){
+            let n = Number(n1.value)
+            let raiz = n ** (1/2)
+            if(n == 0){
+                alert("[ERRO]digite os dados corretamente")
+            }
+            res.innerHTML = `A raiz quadrada desse número é: ${raiz.toFixed(2)}<br>`
+            res.innerHTML += `A tipagem desse número é ${ver(n)}<br>`
+            res.innerHTML += `Com duas casas decimais fica ${n.toFixed(2)}<br>`
+            res.innerHTML += `Em binário esse número é ${n.toString(2)} `
+        }
+        function ver(p){
+            if(Number.isInteger(p)){
+                return "inteiro"
+            }else{
+                return "racional"
+            }
+        }
+    </script>
+</body>
+</html>

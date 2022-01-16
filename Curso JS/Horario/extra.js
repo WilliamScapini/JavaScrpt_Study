@@ -1,0 +1,6 @@
+let dat = new Date()
+let hrs = dat.getHours()
+let min = dat.getMinutes()
+let seg = dat.getSeconds()
+let form = (hrs < 10 ? "0" + hrs : hrs)+":"+(min < 10 ? "0" + min : min)+":"+(seg < 10 ? "0" + seg : seg)
+console.log(form)
